@@ -1,0 +1,22 @@
+{
+    "name": "julienfra/stats",
+    "description": "stats",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+      "psr-4": {
+        "Julienfra\\Stats\\": "src/"
+      }
+    },
+    "scripts": {
+      "test": "vendor/bin/pest"
+    },
+    "require-dev": {
+      "pestphp/pest": "^2.20"
+    },
+    "config": {
+      "allow-plugins": {
+        "pestphp/pest-plugin": true
+      }
+    }
+  }
