@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'julienfra/stats',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => NULL,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => '52a4bdc260c0c64a102570a5e6cb6a2eb61190a8',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -56,9 +56,9 @@
             'dev_requirement' => true,
         ),
         'julienfra/stats' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => NULL,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '52a4bdc260c0c64a102570a5e6cb6a2eb61190a8',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
