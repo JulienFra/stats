@@ -3,7 +3,7 @@
         'name' => 'julienfra/stats',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '52a4bdc260c0c64a102570a5e6cb6a2eb61190a8',
+        'reference' => 'f999a3a90c46c53bd233c9f0438e73427c1f7723',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -58,7 +58,7 @@
         'julienfra/stats' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '52a4bdc260c0c64a102570a5e6cb6a2eb61190a8',
+            'reference' => 'f999a3a90c46c53bd233c9f0438e73427c1f7723',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
