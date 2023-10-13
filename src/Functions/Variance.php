@@ -2,23 +2,25 @@
 
 namespace Julienfra\Stats\Functions;
 
+use Julienfra\Stats\Functions\Average;
+
 class Variance
 {
     public static function calculate(array $numbers): float
     {
-        if (empty($numbers)) {
-            throw new \InvalidArgumentException("Le tableau ne peut pas être vide.");
+        if (count($numbers) < 2) {
+            throw new \InvalidArgumentException("Cannot calculate variance with less than 2 numbers");
         }
 
-        $mean = array_sum($numbers) / count($numbers);
-        $sumSquaredDifferences = 0;
+        $mean = Average::calculate($numbers);
 
+        $sumOfSquares = 0;
         foreach ($numbers as $number) {
-            $sumSquaredDifferences += ($number - $mean) ** 2;
+            $sumOfSquares += pow($number - $mean, 2);
         }
 
-        $variance = $sumSquaredDifferences / (count($numbers) - 1); // Utilisation de (n-1) au lieu de n
+        $variance = $sumOfSquares / count($numbers);
 
-        return $variance;
+        return round($variance, 2); // Arrondir à 2 décimales
     }
 }
